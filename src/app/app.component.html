@@ -1,0 +1,56 @@
+<nav class="nav">
+  <div class="nav-button" type="button">
+    <ibm-icon-menu24 class="icon"></ibm-icon-menu24>
+  </div>
+  <div class="bx--header__global nav-icon">
+    <div class="nav-button" type="button">
+      <ibm-icon-mobile24 class="icon"></ibm-icon-mobile24>
+    </div>
+    <div class="nav-button" type="button">
+      <ibm-icon-play24 class="icon"></ibm-icon-play24>
+    </div>
+  </div>
+</nav>
+<main>
+  <div class="right-side-nav">
+    <div class="tools-nav">
+      <!-- <button class="bx--btn bx--btn--ghost bx--btn--sm" type="button">
+        <ibm-icon-add24 innerClass="nav-icon" class="host-class"></ibm-icon-add24>
+        <svg focusable="false" preserveAspectRatio="xMidYMid meet"
+          style="width:16px;height:16px;will-change: transform;margin-bottom: 12px;" viewBox="0 0 16 16">
+          <path fill="#fff" d="M7,10L12,15L17,10H7Z" />
+        </svg>
+      </button> -->
+      <div class="nav-button" type="button">
+        <ibm-icon-new-tab24 innerClass="nav-icon" class="icon"></ibm-icon-new-tab24>
+      </div>
+      <div class="nav-button" type="button">
+        <ibm-icon-checkbox24 innerClass="nav-icon" class="icon"></ibm-icon-checkbox24>
+      </div>
+      <div class="nav-button" type="button">
+        <ibm-icon-text-creation24 innerClass="nav-icon" class="icon"></ibm-icon-text-creation24>
+      </div>
+
+      <div class="nav-button" type="button">
+        <ibm-icon-search24 innerClass="nav-icon" class="icon"></ibm-icon-search24>
+      </div>
+    </div>
+    <div class="components-nav">
+      <div class="components-nav-header">
+        <h4>Pages</h4>
+      </div>
+      <ibm-accordion>
+        <ibm-accordion-item title="Home" (selected)="selected($event)">
+          <ul ibmList>
+            <li ibmListItem>One</li>
+            <li ibmListItem>Two</li>
+            <li ibmListItem>Three</li>
+          </ul>
+        </ibm-accordion-item>
+      </ibm-accordion>
+    </div>
+  </div>
+  <div class="">
+    <router-outlet></router-outlet>
+  </div>
+</main>

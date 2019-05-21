@@ -1,0 +1,111 @@
+$nav-height: 49.5px;
+$main-height: calc(100% - 3rem);
+
+.nav {
+    z-index: 9999;
+    background-color: #171717;
+    border-bottom: 1px solid #3d3d3d;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-align-items: center;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    //height: $nav-height;
+    background-color: #252525;
+    color: #f3f3f3;
+    padding: 0 10px;
+}
+
+.nav .bx--header__name {
+    font-weight: 400;
+    white-space: nowrap;
+}
+
+.bx--header__global {
+    display: -webkit-flex;
+    display: flex;
+    -webkit-justify-content: flex-end;
+    justify-content: flex-end;
+    -webkit-flex: 1 1;
+    flex: 1 1;
+    height: 100%; 
+    padding: 4px 0;
+}
+
+.bx--btn—ghost {
+    color: #fff;
+}
+
+.nav-icons {
+   
+}
+
+.nav-button {
+    //background: #c3c3c3;
+    padding: 8px;
+    text-align: center;
+    .icon {
+        cursor: pointer;
+        &:hover {
+            fill: #7a7a7a;
+        }
+    }
+}
+
+$tool-nav-width: 60px;
+
+.right-side-nav {
+    width: 234px;
+    height: 100%;
+    display: flex;
+    position: fixed;
+    .tools-nav {
+        padding: 10px 0;
+        width: $tool-nav-width;
+        background: #fff;
+        color: #fff;
+        top: $nav-height;
+        border-right: #E5E5E5 2px solid;
+        left: 0px;
+        right: 4px;
+        bottom: 0;
+        position: fixed;
+    }
+    .components-nav {
+        width: 200px;
+        background: rgb(255, 255, 255);
+        color: #fff;
+        top: $nav-height;
+        left: $tool-nav-width;
+        right: 4px;
+        bottom: 0;
+        position: fixed;
+        ul {
+            color: #000;
+            padding-left: 10px;
+        }
+        .components-nav-header {
+            color: #000000;
+            font-weight: bold;
+            padding: 8px 18px;
+        }
+    }
+}
+
+main {
+    background: #E5E5E5;
+    top: $nav-height;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    position: fixed;
+    //height: 400px;
+    box-sizing: border-box;
+}
+
+ibm-icon-mobile24 , ibm-icon-play24, ibm-icon-menu24  {
+    fill: #fff;
+}
