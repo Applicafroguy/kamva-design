@@ -74,7 +74,7 @@ $tool-nav-width: 60px;
         bottom: 0;
         position: fixed;
     }
-    .components-nav {
+    .layers-nav {
         width: 200px;
         background: rgb(255, 255, 255);
         color: #fff;
@@ -83,14 +83,19 @@ $tool-nav-width: 60px;
         right: 4px;
         bottom: 0;
         position: fixed;
+        border-right: #E5E5E5 2px solid;
         ul {
             color: #000;
-            padding-left: 10px;
+           // padding-left: 10px;
+           li {
+               padding: 10px 0;
+               background: #3d3d3d;
+           }
         }
-        .components-nav-header {
+        .layers-nav-header {
             color: #000000;
             font-weight: bold;
-            padding: 8px 18px;
+            padding: 14px 18px;
         }
     }
 }
@@ -102,10 +107,53 @@ main {
     right: 0;
     bottom: 0;
     position: fixed;
-    //height: 400px;
     box-sizing: border-box;
 }
 
 ibm-icon-mobile24 , ibm-icon-play24, ibm-icon-menu24  {
     fill: #fff;
+}
+
+.bx--accordion__content {
+    padding: 0;
+}
+
+.design-canvas {
+    padding: 70px;
+    position: fixed;
+    top: $nav-height;
+    right: 200px;
+    left: 260px;
+    bottom: 0;
+    overflow: auto;
+    scroll-margin-right: 4px;
+}
+.design-canvas::-webkit-scrollbar-track {
+        -webkit-border-radius: 2px;
+    }
+    .design-canvas::-webkit-scrollbar-thumb {
+        -webkit-border-radius: 0px;
+        -webkit-width:10px;
+    }
+.properties {
+    width: 200px;
+    background: rgb(255, 255, 255);
+    color: #fff;
+    top: $nav-height;
+    //left: $tool-nav-width;
+    border-left: #E5E5E5 2px solid;
+    box-shadow: 0 4px 3px rgba(0,0,0,.5);
+    right: 4px;
+    bottom: 0;
+    position: fixed;
+    ul {
+        color: #000;
+        padding-left: 10px;
+    }
+    .properties-header {
+        color: #000000;
+        font-weight: bold;
+        padding: 14px 18px;
+        border-bottom: 1px solid #dcdcdc;
+    }
 }
