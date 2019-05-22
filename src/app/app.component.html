@@ -39,15 +39,27 @@
       <div class="layers-nav-header">
         <h4>Pages</h4>
       </div>
-      <ibm-accordion>
-        <ibm-accordion-item title="Home" (selected)="selected($event)">
-          <ul ibmList>
-            <li ibmListItem>One</li>
-            <li ibmListItem>Two</li>
-            <li ibmListItem>Three</li>
-          </ul>
-        </ibm-accordion-item>
-      </ibm-accordion>
+      <div class="layers kd-bottom-border">
+        <ul class="layers-list">
+          <li><ibm-icon-checkmark-outline16 class="icon"></ibm-icon-checkmark-outline16> <span>Home</span></li> 
+        </ul>
+      </div>
+      <div class="layers-nav-header">
+        <h4>Layers</h4>
+      </div>
+      <div class="layers kd-bottom-border">
+        <ul class="layers-list">
+          <li>
+            <div>
+              <ibm-icon-checkmark-outline16 class="icon"></ibm-icon-checkmark-outline16>
+            <span>nav</span>
+            <ibm-icon-view16 class="icon kd-float-right"></ibm-icon-view16>
+            <ibm-icon-unlocked16 class="icon kd-float-right kd-margin-left-1x"></ibm-icon-unlocked16>
+            
+            </div>
+          </li> 
+        </ul>
+      </div>
     </div>
   </div>
   <div id="canvas" class="design-canvas">

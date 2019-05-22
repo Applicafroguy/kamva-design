@@ -15,6 +15,9 @@ import { Search24Module } from '@carbon/icons-angular/lib/search/24';
 import { TextCreation24Module } from '@carbon/icons-angular/lib/text--creation/24';
 import { NewTab24Module } from '@carbon/icons-angular/lib/new-tab/24';
 import { Mobile24Module } from '@carbon/icons-angular/lib/mobile/24';
+import { CheckmarkOutline16Module } from '@carbon/icons-angular/lib/checkmark--outline/16';
+import { Unlocked16Module } from '@carbon/icons-angular/lib/unlocked/16';
+import { View16Module } from '@carbon/icons-angular/lib/view/16';
 
 @NgModule({
   declarations: [
@@ -34,7 +37,10 @@ import { Mobile24Module } from '@carbon/icons-angular/lib/mobile/24';
     TextCreation24Module,
     StructuredListModule,
     NewTab24Module,
-    Mobile24Module
+    Mobile24Module,
+    CheckmarkOutline16Module,
+    Unlocked16Module,
+    View16Module
   ],
   providers: [],
   bootstrap: [AppComponent]

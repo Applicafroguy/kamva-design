@@ -1,5 +1,33 @@
 @import '~carbon-components/scss/globals/scss/styles.scss';
+@import './variables';
 
 html, body , app-root {
     height: 100vh;
+}
+
+
+// 
+.kd-top-border {
+    border-top: $border;
+}
+.kd-bottom-border {
+    border-bottom: $border;
+}
+.kd-right-border {
+    border-right: $border;
+}
+.kd-left-border {
+    border-left: $border;
+}
+
+.kd-float-left {
+    float: left;
+}
+.kd-float-right {
+    float: right;
+}
+
+// margin
+.kd-margin-left-1x {
+    margin-left: 10px;
 }

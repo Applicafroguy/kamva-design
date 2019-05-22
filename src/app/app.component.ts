@@ -8,43 +8,56 @@ import * as Raphael from 'raphael';
 })
 export class AppComponent implements AfterViewInit {
 
+  
 
   constructor() {
   }
 
   ngAfterViewInit() {
-    const paper = Raphael('canvas', 1280, 980);
+    const paper = Raphael('canvas', 4000, 4000);
 
-
+    // Group Board with Label
     paper.setStart();
-    const title = paper.text(18, 20, 'Home')
+
+    // Create Board Background
+    const boardBackground = paper.rect(4, 32, 1280, 980)
+    .attr({
+      fill: '#FFF',
+      stroke: 'none',
+      'stroke-width': 4
+    });
+
+    //boardBackground.
+
+    // Create Label
+    const boardLabel = paper.text(22, 20, 'Home')
       .attr({
         'font-size': '14px',
         cursor: 'pointer'
       });
-    const boardBackground = paper.rect(0, 40, 1280, 980)
-      .attr({
-        fill: '#FFF',
-        stroke: 'none',
-        'stroke-width': 1
-      });
 
+    // Label
+    boardLabel.mouseover(() => {
+      boardBackground.glow({
+        
+      });
+    })
+    .mouseout(() => {
+    //  boardBackground.glow();
+    }).getBBox(true);
+
+    // Get created Board + Label
     const board = paper.setFinish();
-    board
-      .mousemove((e) => {
-        console.log(e)
-      })
-      // .drag(() => {
 
-      // })
-      .hover(() => { }, () => {
 
-      })
-      .click(() => {
-        boardBackground.attr({
-          stroke: 'blue'
-        });
-      });
+    // move board
+    // boardLabel.drag((dx, dy, x, y, e) => {
+    //   console.log(dx, dy, x, y, e);
+    // }, (x,y,e) => {
+    //   console.log(x,y,e);
+    // }, () => {
+    //   console.log('Drag Ended');
+    // })
   }
 
 
